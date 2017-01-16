@@ -1,0 +1,36 @@
+
+  <ion-modal-view>
+    <ion-header-bar class="calm-bg cf-modal-header">
+      <h1 class="title">Add a New Medicine</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+      <div class="list">
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Phone:</span>
+          <input type="text" placeholder="Please enter description" ng-model="contact.phone" autofocus>
+        </label>
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Address</span>
+          <input type="text" placeholder="Please enter dosage" ng-model="contact.Address">
+        </label>
+
+      </div>
+
+      <div class="modal-button-wrap">
+        <button class="button button-calm modal-button" ng-click="vm.createContact(contact) || addModal.hide()">
+          Save
+        </button>
+
+        <button class="button button-calm modal-button" ng-click="addModal.hide()">
+          Cancel
+        </button>
+      </div>
+
+    </ion-content>
+
+  </ion-modal-view>
+

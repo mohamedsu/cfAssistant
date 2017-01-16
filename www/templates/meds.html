@@ -1,0 +1,40 @@
+<ion-pane class="custom-background">
+  <ion-header-bar class="bar-calm transparent">
+    <a href="#/tab">
+      <button class="icon icon-left ion-ios-arrow-back button button-clear"></button>
+    </a>
+    <h1 class="title">Medications</h1>
+    <i class="icon icon-right ion-ios-medkit-outline button button-clear"></i>
+  </ion-header-bar>
+  <ion-content>
+
+    <div ng-repeat="med in vm.meds " class="med-rectangle rectangle-gradient meds">
+      <p>{{med.dosage}}</p>
+      <h4>{{med.description}}</h4>
+
+      <button class="button icon ion-close-circled transparent cf-med-delete assertive" ng-show="vm.deleteButtonVisible" ng-click="vm.showConfirm(med)"></button>
+      <button class="button icon ion-edit transparent cf-med-delete energized" ng-show="vm.editButtonVisible" ng-click="vm.showEditModal(med)"></button>
+    </div>
+
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar cf-blue">
+
+    <div class="buttons button-left-align">
+      <button class="button icon ion-plus-circled transparent" ng-click="addModal.show()"> Add New</button>
+    </div>
+
+    <div class="buttons button-center-align">
+      <button class="button icon ion-edit transparent" ng-click="vm.editVisible()"> Edit</button>
+    </div>
+
+    <div class="buttons button-right-align">
+      <button class="button icon ion-close-circled transparent" ng-click="vm.deleteVisible()"> Delete</button>
+    </div>
+
+
+  </ion-footer-bar>
+
+</ion-pane>
+
+

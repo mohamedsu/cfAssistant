@@ -1,0 +1,89 @@
+[
+  {
+    "medicines": [
+      {
+        "id":"1",
+        "description":"Aztronam",
+        "dosage":"75 mg, 3x a day"
+      },
+      {
+        "id":"2",
+        "description":"Tobramycin",
+        "dosage":"80 mg, 2x a day"
+      },
+      {
+        "id":"3",
+        "description":"Azithromycin",
+        "dosage":"250 mg, 3x a week"
+      },
+      {
+        "id":"4",
+        "description":"Ventolin",
+        "dosage":"2.5 mg, 2x a day"
+      }
+    ],
+
+    "contacts": [
+      {
+        "id":"1",
+        "Address":"IGMH. Hospital",
+        "phone":"+960 333-5335"
+      },
+      {
+        "id":"2",
+        "Address":"ADK. Hospital",
+        "phone":"+960 331-3553"
+      },
+      {
+        "id":"3",
+        "Address":"EVE clinic",
+        "phone":"+960 330-0788"
+      },
+      {
+        "id":"4",
+        "Address":"Medica Hospital",
+        "phone":"+960 300-2255"
+      }
+
+    ],
+
+  "appointments" : [
+    {
+      "id":"1",
+      "date":"2017-01-25",
+      "time":"10:50",
+      "person":"Dr. Smith at IGMH."
+    },
+    {
+      "id":"2",
+      "date":"2017-01-26",
+      "time":"10:50",
+      "person":"Dr. Smith at ADK."
+    },
+    {
+      "id":"3",
+      "date":"2017-01-27",
+      "time":"10:50",
+      "person":"Dr. Smith at IGMH."
+    },
+    {
+      "id":"4",
+      "date":"2017-01-28",
+      "time":"10:50",
+      "person":"Dr. Smith at IGMH."
+    }
+  ],
+
+  "tasks": [
+    { "action": "Buy Groceries", "done": false },
+    { "action": "Get Shoes", "done": false },
+    { "action": "Collect Reports from ADK", "done": true },
+    { "action": "Call IGMH", "done": false },
+    { "action": "Daily Workout", "done": true },
+    { "action": "Go shopping with mom", "done": false }
+  ]
+
+
+  }
+
+]

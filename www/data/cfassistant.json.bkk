@@ -1,0 +1,43 @@
+[
+  {
+    "medicines": [
+      {
+        "id":"1",
+        "description":"Aztronam",
+        "dosage":"75 mg, 3x a day"
+      },
+      {
+        "id":"2",
+        "description":"Tobramycin",
+        "dosage":"80 mg, 2x a day"
+      },
+      {
+        "id":"3",
+        "description":"Azithromycin",
+        "dosage":"250 mg, 3x a week"
+      },
+      {
+        "id":"4",
+        "description":"Ventolin",
+        "dosage":"2.5 mg, 2x a day"
+      }
+    ],
+
+    "contacts": [
+      {
+        "id":"1",
+        "Address":"IGMH. Hospital",
+        "phone":"+960 333-5335"
+      },
+      {
+        "id":"2",
+        "Address":"ADK. Hospital",
+        "phone":"+960 331-3553"
+      }
+
+    ]
+
+
+  }
+
+]

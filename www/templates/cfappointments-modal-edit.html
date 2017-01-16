@@ -1,0 +1,42 @@
+
+<ion-modal-view>
+  <ion-header-bar class="calm-bg cf-modal-header">
+    <h1 class="title">Add an Appointment</h1>
+  </ion-header-bar>
+
+  <ion-content>
+
+    <div class="list">
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Date: (mm/dd/yyyy)</span>
+        <input type="date" placeholder="Please enter appointment date" ng-model="vm.selectedAppointment.date" autofocus>
+      </label>
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Time</span>
+        <input type="text" placeholder="Please enter appointment date" ng-model="vm.selectedAppointment.time" autofocus>
+      </label>
+
+
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Person</span>
+        <input type="text" placeholder="Appointment with" ng-model="vm.selectedAppointment.person">
+      </label>
+
+    </div>
+
+    <div class="modal-button-wrap">
+      <button class="button button-calm modal-button" ng-click="vm.editAppointment(vm.selectedAppointment) || editModal.hide()">
+        Save
+      </button>
+
+      <button class="button button-calm modal-button" ng-click="editModal.hide()">
+        Cancel
+      </button>
+    </div>
+
+  </ion-content>
+
+</ion-modal-view>
+

@@ -1,0 +1,104 @@
+<ion-pane class="custom-background">
+  <ion-header-bar class="bar-calm transparent">
+    <a href="#/tab">
+      <button class="icon icon-left ion-ios-arrow-back button button-clear"></button>
+    </a>
+    <h1 class="title">Recommendations</h1>
+    <i class="icon icon-right ion-ios-pulse button button-clear"></i>
+  </ion-header-bar>
+  <ion-content>
+
+    <ion-list>
+
+     <div class="intro">
+       <p>The following are ways for adding protein and calories to the diet.
+         Be sure to follow other specific instructions from your health care provider.</p>
+
+     </div>
+
+      <div class="expandcollapse-item">
+        <div ng-click="active = !active" ng-class="{'expandcollapse-heading-collapsed rectangle-gradient': active, 'expandcollapse-heading-expanded': !active}">
+          <h4>Enzymes, vitamins, and salt:</h4></p>
+        </div>
+
+        <div class="slideDown" ng-hide="active">
+          <div class="expand-collapse-content">
+            <p>Most people with CF must take pancreatic enzymes. These enzymes help your body absorb fat and protein.
+              Taking them all the time will decrease or get rid of foul-smelling stools, gas, and bloating.</p>
+
+            <p>Take enzymes with all meals and snacks.</p>
+
+            <p>Talk to your provider about increasing or decreasing your enzymes, depending on your symptoms</p>
+
+            <p>Ask your provider about taking vitamins A, D, E, K, and extra calcium.
+              There are special formulas for people with CF.</p>
+
+            <p>People who live in hot climates may need a small amount of extra table salt.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="expandcollapse-item">
+        <div ng-click="active1 = !active1" ng-class="{'expandcollapse-heading-collapsed rectangle-gradient': active1, 'expandcollapse-heading-expanded': !active1}">
+          <h4>Eating patterns:</h4>
+        </div>
+
+        <div class="slideDown" ng-hide="active1">
+          <div class="expand-collapse-content">
+
+            <p>Eat whenever you are hungry. This may mean eating several small meals throughout the day.</p>
+
+            <p>Keep a variety of nutritious snack foods around. Try to snack on something every hour,
+              such as cheese and crackers, muffins, or trail mix.</p>
+
+            <p>Try to eat regularly, even if it is only a few bites.
+              Or, include a nutrition supplement or milkshake.</p>
+
+            <p>Be flexible. If you aren't hungry at dinner time, make breakfast,
+              mid-morning snacks, and lunch your main meals.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="expandcollapse-item">
+        <div ng-click="active2 = !active2" ng-class="{'expandcollapse-heading-collapsed rectangle-gradient': active2, 'expandcollapse-heading-expanded': !active2}">
+          <h4>Getting more calories and protein:</h4>
+        </div>
+
+        <div class="slideDown" ng-hide="active2">
+          <div class="expand-collapse-content">
+
+            <p>Add grated cheese to soups, sauces, casseroles, vegetables, mashed
+              potatoes, rice, noodles, or meat loaf.</p>
+
+            <p>Use whole milk, half and half, cream, or enriched milk in cooking or beverages.
+              Enriched milk has nonfat dry milk powder added to it.</p>
+
+            <p>Spread peanut butter on bread products or use it as a dip for raw vegetables and fruit.
+              Add peanut butter to sauces or use on waffles.</p>
+
+            <p>Add marshmallows to fruit or hot chocolate. Add raisins, dates, or chopped nuts
+              and brown sugar to hot or cold cereals, or have them for snacks.</p>
+
+
+            <p>Use sour cream or yogurt on vegetables such as potatoes, beans, carrots, or squash.
+              It can also be used as a dressing for fruit.</p>
+
+            <p>Breaded meat, chicken, and fish have more calories than broiled or plain roasted.</p>
+
+            <p>Add extra cheese on top of frozen prepared pizza.</p>
+
+            <p>Add grated cheeses, tuna, shrimp, crabmeat, ground beef, diced ham or
+              sliced boiled eggs to sauces, rice, casseroles, and noodles.</p>
+
+
+          </div>
+        </div>
+      </div>
+
+    </ion-list>
+
+  </ion-content>
+
+</ion-pane>

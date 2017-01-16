@@ -1,0 +1,32 @@
+
+  <ion-modal-view>
+    <ion-header-bar class="calm-bg cf-modal-header">
+      <h1 class="title">Edit a Task</h1>
+    </ion-header-bar>
+
+    <ion-content>
+
+      <div class="list">
+
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Task</span>
+          <input type="text" placeholder="Please enter your task" ng-model="task.action" autofocus>
+        </label>
+
+
+      </div>
+
+      <div class="modal-button-wrap">
+        <button class="button button-calm modal-button" ng-click="vm.createTask(task) || addModal.hide()">
+          Save
+        </button>
+
+        <button class="button button-calm modal-button" ng-click="addModal.hide()">
+          Cancel
+        </button>
+      </div>
+
+    </ion-content>
+
+  </ion-modal-view>
+

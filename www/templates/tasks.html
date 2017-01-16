@@ -1,0 +1,48 @@
+<ion-pane class="custom-background">
+  <ion-header-bar class="bar-calm transparent">
+    <a href="#/tab">
+      <button class="icon icon-left ion-ios-arrow-back button button-clear"></button>
+    </a>
+    <h1 class="title">To Do List</h1>
+    <i class="icon icon-right ion-ios-checkmark-empty button button-clear"></i>
+  </ion-header-bar>
+  <ion-content>
+
+    <ion-toggle ng-model="showComplete" toggle-class="toggle-positive" class="transparent cf-toggle">Show Complete</ion-toggle>
+
+
+      <div ng-repeat="task in vm.tasks | checkedItems:showComplete | orderBy : 'action' " class="tasks-rectangle tasks">
+        <!--<p>{{task.done}}</p>-->
+        <div>
+          <ion-checkbox ng-model="task.done" class="transparent no-border"><h4>{{task.action}}</h4></ion-checkbox>
+        </div>
+
+        <button class="button icon ion-close-circled transparent cf-med-delete assertive" ng-show="vm.deleteButtonVisible" ng-click="vm.showConfirm(task)"></button>
+        <button class="button icon ion-edit transparent cf-med-delete energized" ng-show="vm.editButtonVisible" ng-click="vm.showEditModal(task)"></button>
+
+      </div>
+
+
+
+  </ion-content>
+
+  <ion-footer-bar align-title="left" class="bar cf-blue">
+
+    <div class="buttons button-left-align">
+      <button class="button icon ion-plus-circled transparent" ng-click="addModal.show()"> Add New</button>
+    </div>
+
+    <div class="buttons button-center-align">
+      <button class="button icon ion-edit transparent" ng-click="vm.editVisible()"> Edit</button>
+    </div>
+
+    <div class="buttons button-right-align">
+      <button class="button icon ion-close-circled transparent" ng-click="vm.deleteVisible()"> Delete</button>
+    </div>
+
+
+  </ion-footer-bar>
+
+</ion-pane>
+
+

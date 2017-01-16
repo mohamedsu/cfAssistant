@@ -1,0 +1,22 @@
+[
+  {
+  "id":"1",
+  "description":"Aztronam",
+  "dosage":"75 mg, 3x a day"
+  },
+  {
+  "id":"2",
+  "description":"Tobramycin",
+  "dosage":"80 mg, 2x a day"
+  },
+  {
+  "id":"3",
+  "description":"Azithromycin",
+  "dosage":"250 mg, 3x a week"
+  },
+  {
+  "id":"4",
+  "description":"Ventolin",
+  "dosage":"2.5 mg, 2x a day"
+  }
+]
